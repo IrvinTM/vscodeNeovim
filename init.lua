@@ -29,3 +29,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+-- search ignoring case
+vim.opt.ignorecase = true
+
+-- disable "ignorecase" option if the search pattern contains upper case characters
+vim.opt.smartcase = true
